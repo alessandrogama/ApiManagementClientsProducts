@@ -30,6 +30,29 @@ services:
       - "5433:5432"
     networks:
       - laravel
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laravel-scheduler
+    restart: unless-stopped
+    working_dir: /var/www/html
+    volumes:
+      - ./backendApi:/var/www/html
+    networks:
+      - laravel
+    depends_on:
+      - db
+    entrypoint: ["php", "/var/www/html/artisan", "schedule:run"]
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    restart: always
+    ports:
+      - 8081:8080
+    networks:
+      - laravel
 
 volumes:
   postgres-data:
