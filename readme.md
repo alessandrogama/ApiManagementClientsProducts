@@ -17,7 +17,7 @@ A ideia veio de um desafio para criar uma API pública com autenticação, valid
 - Listagem de favoritos com detalhes dos produtos salvos localmente.
 - Validações de dados e segurança básica (auth).
 ---
-## 🖥️ Melhorias a futuras
+## 🖥️ Melhorias futuras
  - RabbitMQ : Para processamento assíncrono para reduzir tempo de resposta e lidar com Alta demanda
  - Redis: Armazenamento das queries de consulta exemplo dos Produtos favoritos para reduzir o acesso ao banco de dados.
  - Paginação e filtros : Melhoria para a navegação
