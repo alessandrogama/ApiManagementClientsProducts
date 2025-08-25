@@ -61,4 +61,13 @@ A ideia veio de um desafio para criar uma API pública com autenticação, valid
     ```bash
        docker exec -it laravel-app php artisan queue:work
     ```
-8. ****: 
+    ---
+8. **Gerar a Documentação**:     
+    ```bash
+       docker exec -it laravel-app php artisan l5-swagger:generate
+     ```
+    ---
+8. **Acessar e Testar a Documentação**:           
+     ```bash
+       http://localhost:8000/api/documentation
+     ```
