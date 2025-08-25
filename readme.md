@@ -5,7 +5,7 @@ Utilizar o **Laravel 12** como base, com autenticação via **Sanctum**, integra
 
 Utilizar o **Docker** com **PostgreSQL**, o que facilita a configuração em diferentes ambientes. Escolhi essa abordagem para tornar o desenvolvimento mais ágil e escalável, evitando chamadas externas frequentes e garantindo uma boa segurança básica.
 
-A ideia veio de um desafio para criar uma API pública com autenticação, validações e integração externa, pensando em alta demanda.
+A ideia veio de um desafio para criar uma API pública com autenticação, validações e integração externa, pensando em alta demanda  **e as escolhas da tecnologia a ser utilizada foi somente por familiaridade do o framework e a linguagem.**
 
 ---
 
