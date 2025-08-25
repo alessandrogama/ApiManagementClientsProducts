@@ -5,7 +5,7 @@ Utilizar o **Laravel 12** como base, com autenticação via **Sanctum**, integra
 
 Utilizar o **Docker** com **PostgreSQL**, o que facilita a configuração em diferentes ambientes. Escolhi essa abordagem para tornar o desenvolvimento mais ágil e escalável, evitando chamadas externas frequentes e garantindo uma boa segurança básica.
 
-A ideia veio de um desafio para criar uma API pública com autenticação, validações e integração externa, pensando em alta demanda. Adicionei melhorias como rate limiting e expiração de tokens para torná-la mais robusta.
+A ideia veio de um desafio para criar uma API pública com autenticação, validações e integração externa, pensando em alta demanda.
 
 ---
 
@@ -16,7 +16,11 @@ A ideia veio de um desafio para criar uma API pública com autenticação, valid
 - Sincronização automática de produtos da Fake Store API à meia-noite, usando queues.
 - Listagem de favoritos com detalhes dos produtos salvos localmente.
 - Validações de dados e segurança básica (auth).
-
+---
+## 🖥️ Melhorias a futuras
+ - RabbitMQ : Para processamento assíncrono para reduzir tempo de resposta e lidar com Alta demanda
+ - Redis: Armazenamento das queries de consulta exemplo dos Produtos favoritos para reduzir o acesso ao banco de dados.
+ - Paginação e filtros : Melhoria para a navegação
 ---
 
 ## 🖥️ Requisitos
